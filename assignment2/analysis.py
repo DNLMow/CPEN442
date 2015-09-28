@@ -36,7 +36,8 @@ def main():
                 pass
 
             try:
-                trigram_text = line[counter] + line[counter + 1] + line[counter + 2]
+                trigram_text = (line[counter] + line[counter + 1] +
+                               line[counter + 2])
                 if trigram_text in trigram_dict:
                     trigram_dict[trigram_text] += 1
                 else:
@@ -45,7 +46,8 @@ def main():
                 pass
 
             try:
-                quadgram_text = line[counter] + line[counter + 1] + line[counter + 2] + line[counter + 3]
+                quadgram_text = (line[counter] + line[counter + 1] +
+                                line[counter + 2] + line[counter + 3])
                 if quadgram_text in quadgram_dict:
                     quadgram_dict[quadgram_text] += 1
                 else:
@@ -54,7 +56,9 @@ def main():
                 pass
 
             try:
-                pentagram_text = line[counter] + line[counter + 1] + line[counter + 2] + line[counter + 3] + line[counter + 4]
+                pentagram_text = (line[counter] + line[counter + 1] +
+                                 line[counter + 2] + line[counter + 3] +
+                                 line[counter + 4])
                 if pentagram_text in pentagram_dict:
                     pentagram_dict[pentagram_text] += 1
                 else:
