@@ -13,6 +13,8 @@ def main():
 
             if (counter % 320000) == 0:
                 print(str(counter) + " of 320000 rotation passed.")
+                print("String1: " + input_str1)
+                print("String2: " + input_str2)
 
             counter += 1
 
