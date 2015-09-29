@@ -22,7 +22,9 @@ def main():
                 input_str2 != student_id):
                 print("Collision found:")
                 print("String1: " + student_id)
+                print("crc32 value for student id: " + binascii.crc32(student_id))
                 print("String2: " + input_str2)
+                print("crc32 value for string2: " + binascii.crc32(input_str2))
 
 if __name__ == "__main__":
     main()
